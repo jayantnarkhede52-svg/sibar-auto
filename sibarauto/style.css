@@ -1495,6 +1495,7 @@ footer {
     justify-content: center;
     width: 36px;
     height: 36px;
+    position: relative;
     z-index: 999;
   }
 
