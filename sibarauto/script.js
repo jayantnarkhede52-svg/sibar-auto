@@ -3,7 +3,7 @@
  * Premium Homepage Interactive Script
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initAll() {
   initNavbar();
   initScrollReveal();
   initCounters();
@@ -11,7 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroParallax();
   initProcessWorkflow();
   initVisitorCounter();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAll);
+} else {
+  initAll();
+}
 
 /**
  * Navigation Bar Scroll & Mobile Menu Toggle
