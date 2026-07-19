@@ -1512,7 +1512,7 @@ footer {
     background-image: url('./assets/images/factory.png');
     background-size: cover;
     background-position: center;
-    padding: 120px 0 180px 0 !important;
+    padding: 120px 0 140px 0 !important;
     min-height: auto;
     overflow: hidden;
   }
@@ -1614,26 +1614,26 @@ footer {
     padding: 1.25rem 1rem !important;
     box-shadow: var(--shadow-sm);
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: column !important;
     align-items: center !important;
-    justify-content: flex-start !important;
-    text-align: left !important;
-    gap: 1rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 0.5rem !important;
   }
 
   .hero-stat-item .stat-icon-container {
-    margin-bottom: 0 !important;
+    margin-bottom: 0.25rem !important;
     flex-shrink: 0;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
   }
 
   .hero-stat-item .stat-info-container {
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
-    text-align: left !important;
-    width: auto;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100%;
     flex: 1;
   }
 
@@ -1798,6 +1798,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .logo-subtext {
+    display: none;
+  }
+
   .capabilities-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
