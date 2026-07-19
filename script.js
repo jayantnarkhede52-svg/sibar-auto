@@ -56,22 +56,8 @@ function initNavbar() {
     }
   });
 
-  // Mobile menu toggle
+  // Close mobile menu when a nav link is clicked
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      toggleMobileMenu();
-    });
-
-    // Also listen for touch
-    menuToggle.addEventListener('touchend', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      toggleMobileMenu();
-    });
-
-    // Close mobile menu when a link is clicked
     const links = navLinks.querySelectorAll('a');
     links.forEach(link => {
       link.addEventListener('click', () => {
