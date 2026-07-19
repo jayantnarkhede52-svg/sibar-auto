@@ -235,6 +235,8 @@ function initVisitorCounter() {
 
   // Display count with nice formatting
   counterEl.textContent = count.toLocaleString();
+}
+
 // Expose toggleCapCards to global scope for inline HTML handlers
 window.toggleCapCards = toggleCapCards;
 
