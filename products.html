@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Products Portfolio | SIBAR AUTO PARTS LIMITED | Precision Castings</title>
+  <meta name="description" content="Explore SIBAR's precision aluminium castings. High-quality cylinder heads, engine blocks, crankcases, CAC/radiator tanks, and industrial components for global OEMs.">
+  <meta name="keywords" content="Aluminium Casting Products, Cylinder Heads SIBAR, Crank Cases, Radiator Tanks, CAC Tanks, Engine Components Manufacturer">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sibarauto.com/products.html">
+  <meta property="og:title" content="Products Portfolio | SIBAR AUTO PARTS LIMITED">
+  <meta property="og:description" content="Browse SIBAR's premium range of automotive and industrial precision aluminium components.">
+  <meta property="og:image" content="https://www.sibarauto.com/assets/sibar%20logo.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:type" content="image/png">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+    /* Editorial Alternating Layout Styles */
+    .product-row {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 5rem;
+      align-items: center;
+      margin-bottom: 7rem;
+    }
+    
+    .product-row:nth-child(even) {
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+    
+    .product-row:nth-child(even) .prod-image-card {
+      order: 2;
+    }
+    
+    .product-row:nth-child(even) .prod-info-card {
+      order: 1;
+    }
+    
+    .prod-image-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 24px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      transition: var(--transition-smooth);
+    }
+    
+    .prod-image-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.05);
+    }
+    
+    .prod-image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.85;
+      transition: var(--transition-smooth);
+    }
+    
+    .prod-image-card:hover img {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    
+    .spec-table {
+      width: 100%;
+      margin: 1.5rem 0 2rem 0;
+      border-collapse: collapse;
+    }
+    
+    .spec-table td {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border-glass);
+      font-size: 0.9rem;
+    }
+    
+    .spec-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .spec-label {
+      color: var(--text-gray);
+      font-weight: 500;
+    }
+    
+    .spec-value {
+      color: var(--text-heading);
+      text-align: right;
+      font-family: var(--font-heading);
+      font-weight: 600;
+    }
+    
+    @media (max-width: 991px) {
+      .product-row, .product-row:nth-child(even) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 5rem;
+      }
+      .product-row:nth-child(even) .prod-image-card {
+        order: 1;
+      }
+      .product-row:nth-child(even) .prod-info-card {
+        order: 2;
+      }
+    }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <!-- Font Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0f172a">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="./site.webmanifest">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.sibarauto.com/products.html">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Products Portfolio | SIBAR AUTO PARTS LIMITED | Precision Castings">
+  <meta name="twitter:description" content="Explore SIBAR's precision aluminium castings. High-quality cylinder heads, engine blocks, crankcases, CAC/radiator tanks, and industrial components for global OEMs.">
+  <meta name="twitter:image" content="https://www.sibarauto.com/assets/sibar%20logo.png">
+  <meta property="og:site_name" content="SIBAR AUTO PARTS LIMITED">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="./index.html" class="logo">
+        <img src="./assets/sibar logo.png" alt="Sibar Auto Parts Logo">
+        <span class="logo-subtext">ISO 9001:2015 & IATF 16949:2016 CERTIFIED</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+           <li><a href="./index.html">HOME</a></li>
+          <li><a href="./products.html" class="active">PRODUCTS</a></li>
+          <li><a href="./investor/index.html">INVESTOR RELATIONS</a></li>
+          <li><a href="./awards.html">AWARDS</a></li>
+          <li><a href="./about.html">ABOUT US</a></li>
+          <li><a href="./contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#x2630;</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero hero-subpage" style="min-height: 50vh; padding: 160px 0 80px 0;">
+    <div class="hero-bg"></div>
+    <div class="hero-bg-overlay"></div>
+    
+    <div class="container text-center" style="position: relative; z-index: 3;">
+      <span class="section-tag float-anim">Our Portfolio</span>
+      <h1 class="gradient-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Precision Engine & Industrial Parts</h1>
+      <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; color: var(--text-gray);">
+        We design, cast, and machine high-durability aluminium components for automotive and heavy industries.
+      </p>
+    </div>
+  </section>
+
+  <!-- Editorial Product Showcase Section -->
+  <section class="section-padding" style="background: #f1f5f9;">
+    <div class="container">
+      
+      <!-- 1. Cylinder Heads -->
+      <div id="cylinder-heads" class="product-row reveal">
+        <div class="prod-image-card">
+          <img src="./assets/images/cylinder_head.png" alt="Sibar Precision Cylinder Head Casting">
+        </div>
+        <div class="prod-info-card">
+          <span class="section-tag">Engine Division</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Cylinder Heads</h2>
+          <p style="color: var(--text-gray);">
+            High-integrity cylinder heads utilizing complex core porting. Cast via Gravity Die Casting (GDC) to ensure optimum metal density and thermal conductivity required by heavy-duty automotive assemblies.
+          </p>
+          <table class="spec-table">
+            <tr>
+              <td class="spec-label">Alloy Alloys</td>
+              <td class="spec-value">LM25 / LM6 / Custom</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Process Method</td>
+              <td class="spec-value">Gravity Die Casting (GDC)</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Finish Tolerances</td>
+              <td class="spec-value">±10 Microns</td>
+            </tr>
+          </table>
+          <a href="./contact.html" class="btn btn-primary">Send Specs Inquiry</a>
+        </div>
+      </div>
+
+      <!-- 2. Cylinder Blocks -->
+      <div id="cylinder-blocks" class="product-row reveal">
+        <div class="prod-image-card">
+          <img src="./assets/images/cylinder_block.png" alt="Sibar Precision Cylinder Block Casting">
+        </div>
+        <div class="prod-info-card">
+          <span class="section-tag">Block Division</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Cylinder Blocks</h2>
+          <p style="color: var(--text-gray);">
+            Engine blocks cast under low-pressure controls to ensure zero structural air pockets. Perfected for high wear resistance, optimal heat transfer rates, and precision-honed bore tolerances.
+          </p>
+          <table class="spec-table">
+            <tr>
+              <td class="spec-label">Alloy Alloys</td>
+              <td class="spec-value">LM24 / LM25 / ADC12</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Process Method</td>
+              <td class="spec-value">Low Pressure Casting (LPDC)</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Finish Tolerances</td>
+              <td class="spec-value">±5 Microns</td>
+            </tr>
+          </table>
+          <a href="./contact.html" class="btn btn-primary">Send Specs Inquiry</a>
+        </div>
+      </div>
+
+      <!-- 3. Crank Cases -->
+      <div id="crank-cases" class="product-row reveal">
+        <div class="prod-image-card">
+          <img src="./assets/images/crankcase.png" alt="Sibar Precision Crank Case Casting">
+        </div>
+        <div class="prod-info-card">
+          <span class="section-tag">Powertrain Division</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Crank Cases</h2>
+          <p style="color: var(--text-gray);">
+            Lightweight, high-fatigue-strength crankcases designed for two-wheelers and utility motors. Developed to absorb high operating vibrations while maintaining absolute structural alignment.
+          </p>
+          <table class="spec-table">
+            <tr>
+              <td class="spec-label">Alloy Alloys</td>
+              <td class="spec-value">LM9 / LM25 / AlSi9Cu3</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Process Method</td>
+              <td class="spec-value">LPDC / High Integrity GDC</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Finish Tolerances</td>
+              <td class="spec-value">±12 Microns</td>
+            </tr>
+          </table>
+          <a href="./contact.html" class="btn btn-primary">Send Specs Inquiry</a>
+        </div>
+      </div>
+
+      <!-- 4. Radiator & CAC Tanks -->
+      <div id="radiator-cac-tanks" class="product-row reveal">
+        <div class="prod-image-card">
+          <img src="./assets/images/radiator_tank.png" alt="Sibar Precision Cooling Tank Casting">
+        </div>
+        <div class="prod-info-card">
+          <span class="section-tag">Cooling Division</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Radiator & CAC Tanks</h2>
+          <p style="color: var(--text-gray);">
+            Precision cast air-cooler and radiator tanks built for cooling systems. Certified leak-proof under high pressure spikes and intense thermal expansions.
+          </p>
+          <table class="spec-table">
+            <tr>
+              <td class="spec-label">Alloy Alloys</td>
+              <td class="spec-value">LM6 / AlSi10Mg</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Process Method</td>
+              <td class="spec-value">Gravity Die Casting (GDC)</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Pressure Test Rating</td>
+              <td class="spec-value">Up to 6 Bar (Leak Free)</td>
+            </tr>
+          </table>
+          <a href="./contact.html" class="btn btn-primary">Send Specs Inquiry</a>
+        </div>
+      </div>
+
+      <!-- 5. Industrial Castings -->
+      <div id="industrial-castings" class="product-row reveal">
+        <div class="prod-image-card">
+          <img src="./assets/images/industrial_casting.png" alt="Sibar Custom Industrial Aluminium Casting">
+        </div>
+        <div class="prod-info-card">
+          <span class="section-tag">Industrial Division</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Industrial Castings</h2>
+          <p style="color: var(--text-gray);">
+            Custom mechanical valves, structural brackets, electrical actuator housings, and high-strength pump casings built for power engineering and heavy capital industrial networks.
+          </p>
+          <table class="spec-table">
+            <tr>
+              <td class="spec-label">Alloy Alloys</td>
+              <td class="spec-value">LM6 / LM25 / Custom Alloys</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Process Method</td>
+              <td class="spec-value">GDC / Custom Sand Mold</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Finish Tolerances</td>
+              <td class="spec-value">±20 Microns</td>
+            </tr>
+          </table>
+          <a href="./contact.html" class="btn btn-primary">Send Specs Inquiry</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Custom Manufacturing CTA -->
+  <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+    <div class="container text-center reveal">
+      <span class="section-tag">OEM Solutions</span>
+      <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Need Custom Manufacturing?</h2>
+      <p style="max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; color: var(--text-gray);">
+        We support high-volume OEM programs, offering co-design assistance, prototype engineering, tooling creation, GDC/LPDC castings, CNC precision milling, and functional testing.
+      </p>
+      <a href="./contact.html" class="btn btn-primary">Start Custom Project</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="./index.html" class="logo" style="display: inline-flex; margin-bottom: 1.5rem;">
+          <img src="./assets/sibar logo.png" alt="Sibar Logo">
+          <span class="logo-subtext">ISO 9001:2015 & IATF 16949:2016 CERTIFIED</span>
+        </a>
+        <p>Over four decades of metallurgy mastery, delivering precision castings and machined automotive components to international OEMs.</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+           <li><a href="./about.html">About Us</a></li>
+          <li><a href="./products.html">Products Portfolio</a></li>
+          <li><a href="./awards.html">Awards & Achievements</a></li>
+          <li><a href="./investor/index.html">Investor Relations</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h4>Products Portfolio</h4>
+        <ul class="footer-links">
+          <li><a href="./products.html#cylinder-heads">Cylinder Heads</a></li>
+          <li><a href="./products.html#cylinder-blocks">Cylinder Blocks</a></li>
+          <li><a href="./products.html#crank-cases">Crank Cases</a></li>
+          <li><a href="./products.html#radiator-cac-tanks">Radiator Tanks</a></li>
+          <li><a href="./products.html#radiator-cac-tanks">CAC Tanks</a></li>
+          <li><a href="./products.html#industrial-castings">Industrial Castings</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h4>Contact Information</h4>
+        <ul class="contact-info">
+          <li>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Renigunta Road, Tirupati, Andhra Pradesh, India.</span>
+          </li>
+          <li>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span><a href="https://wa.me/918772274400" target="_blank">+91-877-2274400</a></span>
+          </li>
+          <li>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span><a href="mailto:sibarauto77@yahoo.com">sibarauto77@yahoo.com</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 1983 - 2026 SIBAR Auto Parts Limited. All rights reserved.</p>
+      <p>ISO 9001:2015 & IATF 16949:2016 Certified Company | BSE Listed (520141)</p>
+      <p class="visitor-counter-wrapper">Website Visitors: <span id="visitor-counter" class="visitor-count">1000</span></p>
+      <p class="powered-by">Powered by <a href="https://meeramu.in" target="_blank">meeramu.in</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./script.js" defer></script>
+</body>
+</html>

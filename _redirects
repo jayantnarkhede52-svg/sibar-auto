@@ -1,0 +1,16 @@
+# Netlify Redirects File
+# Enables clean URLs without needing .html extensions in the browser address bar
+
+/about                          /about.html                        200
+/products                       /products.html                     200
+/awards                         /awards.html                       200
+/contact                        /contact.html                      200
+/investor                       /investor/index.html               200
+/investor/annual-reports        /investor/annual-reports.html      200
+/investor/corporate-information /investor/corporate-information.html 200
+/investor/financial-results     /investor/financial-results.html   200
+/investor/help-desk             /investor/help-desk.html           200
+/investor/investor-relations    /investor/investor-relations.html  200
+/investor/investor-watch-out    /investor/investor-watch-out.html  200
+/investor/notice-to-shareholders /investor/notice-to-shareholders.html 200
+/investor/shareholding-pattern  /investor/shareholding-pattern.html 200

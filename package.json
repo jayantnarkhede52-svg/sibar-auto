@@ -1,0 +1,21 @@
+{
+  "name": "sibar-auto-parts-website",
+  "version": "1.0.0",
+  "description": "Official Website of SIBAR Auto Parts Limited (BSE Listed: 520141)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -l 3000",
+    "dev": "npx serve -s . -l 3000",
+    "build": "echo 'Build complete - static site ready for deployment'"
+  },
+  "keywords": [
+    "sibar",
+    "auto",
+    "parts",
+    "aluminium",
+    "casting",
+    "bse"
+  ],
+  "author": "SIBAR Auto Parts Limited",
+  "license": "ISC"
+}

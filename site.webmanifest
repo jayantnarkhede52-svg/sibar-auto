@@ -1,0 +1,15 @@
+{
+  "name": "SIBAR AUTO PARTS LIMITED",
+  "short_name": "SIBAR Auto",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a"
+}
