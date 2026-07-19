@@ -1462,6 +1462,12 @@ footer {
     margin-top: 3px;
   }
 
+  /* Collapse the <nav> wrapper so it doesn't block the hamburger button */
+  nav {
+    position: static;
+    pointer-events: none;
+  }
+
   .nav-links {
     display: none;
     position: fixed;
@@ -1478,6 +1484,7 @@ footer {
     gap: 2.25rem;
     z-index: 998;
     padding: 2rem;
+    pointer-events: auto;
   }
 
   .nav-links.active {
@@ -1487,16 +1494,21 @@ footer {
   .nav-links a {
     font-size: 1.25rem;
     font-weight: 600;
+    pointer-events: auto;
   }
 
   .menu-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     position: relative;
-    z-index: 999;
+    z-index: 1001;
+    pointer-events: auto;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
 
   .nav-cta {

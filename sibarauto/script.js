@@ -22,6 +22,17 @@ if (document.readyState === 'loading') {
 /**
  * Navigation Bar Scroll & Mobile Menu Toggle
  */
+function toggleMobileMenu() {
+  var navLinks = document.querySelector('.nav-links');
+  var menuToggle = document.querySelector('.menu-toggle');
+  if (!navLinks || !menuToggle) return;
+  navLinks.classList.toggle('active');
+  var isExpanded = navLinks.classList.contains('active');
+  menuToggle.setAttribute('aria-expanded', isExpanded);
+  menuToggle.innerHTML = isExpanded ? '&#x2715;' : '&#x2630;';
+}
+window.toggleMobileMenu = toggleMobileMenu;
+
 function initNavbar() {
   const header = document.querySelector('header');
   const menuToggle = document.querySelector('.menu-toggle');
@@ -47,11 +58,17 @@ function initNavbar() {
 
   // Mobile menu toggle
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      const isExpanded = navLinks.classList.contains('active');
-      menuToggle.setAttribute('aria-expanded', isExpanded);
-      menuToggle.innerHTML = isExpanded ? '&#x2715;' : '&#x2630;'; // Change between X and hamburger
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+
+    // Also listen for touch
+    menuToggle.addEventListener('touchend', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMobileMenu();
     });
 
     // Close mobile menu when a link is clicked
