@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | SIBAR AUTO PARTS LIMITED</title>
+  <title>About Us | Sibar Auto Parts</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -11,89 +11,78 @@
   <!-- Header -->
   <header>
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="./assets/sibar logo.png" alt="Sibar Auto Parts Logo">
-        <span class="logo-subtext">ISO 9001:2015 & IATF 16949:2016</span>
-      </a>
-      <nav class="nav-links">
+      <nav class="nav-links-left">
         <a href="index.html">HOME</a>
         <a href="products.html">PRODUCTS</a>
-        <a href="investor/index.html">INVESTOR RELATIONS</a>
+        <a href="about.html" class="active">ABOUT</a>
         <a href="awards.html">AWARDS</a>
-        <a href="about.html" class="active">ABOUT US</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="contact.html" class="btn btn-primary">REQUEST RFQ</a>
       </nav>
+
+      <div class="logo-center">
+        <a href="index.html">
+          <img src="./assets/sibar logo.png" alt="Sibar Auto Parts Logo">
+        </a>
+      </div>
+
+      <div class="nav-actions-right">
+        <div class="contact-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          +91 877 2274400
+        </div>
+        <a href="contact.html" class="btn btn-primary">
+          Get In Touch
+          <span class="btn-icon">↗</span>
+        </a>
+      </div>
       <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container hero-content">
-      <span class="hero-badge">About Sibar</span>
-      <h1>Decades of Foundry Excellence</h1>
-      <p>Pioneering the science of precision aluminium casting and CNC machining since 1983.</p>
+    <div class="hero-inner container" style="padding: 4rem 2rem;">
+      <span class="hero-badge">Our Legacy</span>
+      <h1 style="margin-bottom: 0;">Decades of Foundry Excellence</h1>
     </div>
   </section>
 
-  <!-- About Content -->
-  <section class="section section-bg-white">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Engineering Legacy</h2>
-      </div>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <p style="margin-bottom: 1.5rem;">SIBAR Auto Parts Limited is a publicly traded enterprise (BSE: 520141) built on uncompromising quality and technological forward-thinking. From our 15,000 sq. meter facility in Tirupati, India, we have been delivering highly engineered aluminium castings and precision-machined components to global automotive partners for over 40 years.</p>
+  <!-- Content -->
+  <section class="section container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p style="margin-bottom: 1.5rem;">SIBAR Auto Parts Limited is a publicly traded enterprise (BSE: 520141) built on uncompromising quality and technological forward-thinking. From our 15,000 sq. meter facility in Tirupati, India, we have been delivering highly engineered aluminium castings and precision-machined components to global automotive partners for over 40 years.</p>
 
-        <h3 style="margin: 2rem 0 1rem;">Core Strengths</h3>
-        <ul style="list-style-type: square; margin-left: 2rem; margin-bottom: 2rem;">
-          <li>End-to-end manufacturing: Casting, Machining, and Surface Treatment under one roof.</li>
-          <li>Advanced Metallurgy R&D lab with Spectrometers and Real-time X-ray.</li>
-          <li>Zero-defect mindset embedded through our TS 16949 and ISO 9001 workflows.</li>
-        </ul>
-
-        <h3 style="margin: 2rem 0 1rem;">Corporate Governance</h3>
-        <p>As a listed company, we operate with maximum transparency, financial stability, and environmental responsibility, complying with the latest BSE regulations and ESG frameworks.</p>
-      </div>
+      <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Core Strengths</h3>
+      <ul style="list-style-type: none; margin-bottom: 2rem;">
+        <li style="margin-bottom: 1rem; display: flex; gap: 1rem;"><span style="color: var(--primary); font-weight: bold;">✓</span> End-to-end manufacturing: Casting, Machining, and Surface Treatment under one roof.</li>
+        <li style="margin-bottom: 1rem; display: flex; gap: 1rem;"><span style="color: var(--primary); font-weight: bold;">✓</span> Advanced Metallurgy R&D lab with Spectrometers and Real-time X-ray.</li>
+        <li style="margin-bottom: 1rem; display: flex; gap: 1rem;"><span style="color: var(--primary); font-weight: bold;">✓</span> Zero-defect mindset embedded through our TS 16949 and ISO 9001 workflows.</li>
+      </ul>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="./assets/sibar logo.png" alt="Sibar Logo" height="40">
-          <p>Over four decades of metallurgy mastery, delivering precision castings and machined automotive components to international OEMs.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="awards.html">Certifications</a></li>
-            <li><a href="investor/index.html">Investor Relations</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Capabilities</h4>
-          <ul>
-            <li><a href="products.html">Cylinder Heads</a></li>
-            <li><a href="products.html">Cylinder Blocks</a></li>
-            <li><a href="products.html">CNC Machining</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Contact</h4>
-          <ul>
-            <li>Renigunta Road, Tirupati, AP</li>
-            <li><a href="mailto:sibarauto77@yahoo.com">sibarauto77@yahoo.com</a></li>
-            <li><a href="contact.html">Request RFQ</a></li>
-          </ul>
-        </div>
+  <footer class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="./assets/sibar logo.png" alt="Sibar Logo" style="filter: brightness(0) invert(1); height: 40px; margin-bottom: 1.5rem;">
+        <p style="color: #9ca3af; font-size: 0.875rem;">Premium OEM Manufacturing since 1983.</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 SIBAR Auto Parts Limited. All rights reserved. | BSE Listed (520141)</p>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="investor/index.html">Investor Relations</a>
+        <a href="awards.html">Certifications</a>
+      </div>
+      <div class="footer-col">
+        <h4>Capabilities</h4>
+        <a href="products.html">Cylinder Heads</a>
+        <a href="products.html">Crank Cases</a>
+        <a href="products.html">CNC Machining</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:sibarauto77@yahoo.com">sibarauto77@yahoo.com</a>
+        <a href="contact.html">Request RFQ</a>
       </div>
     </div>
   </footer>
